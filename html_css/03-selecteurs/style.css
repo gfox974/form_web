@@ -1,0 +1,49 @@
+p {
+    color: red;
+    /* ici, tous les elements "paragraphe" sont affectés */
+}
+
+p:first-child {
+    color: lightskyblue;
+    /* ici, seul le premier element d'un element parent est affecté */
+}
+
+p:last-child {
+    color: lightseagreen;
+    /* ici, seul le dernier element d'un element parent est affecté */
+}
+
+p:nth-child(even) {
+    color: darkgoldenrod;
+    /* ici, affecte tous les elements pairs */
+}
+
+p:nth-child(odd) {
+    color: darkorange;
+    /* ici, affecte tous les elements impairs */
+}
+
+p:nth-child(5),p:nth-child(6) {
+    color: lightslategrey;
+    /* ici, n'affecte que les elements 5 et 6 */
+}
+
+/* ici, on appelle la classe "ZoneA" avec . , elle peut etre attribuée à autant d'elements html que l'on veut */
+.zoneA {
+    color:tomato;
+}
+
+/* ici, on appelle l'id zoneC ( qui est un identifiant unique que l'on ne peut attribuer qu'à un seul element html ) */
+#zoneC {
+    color: greenyellow;
+}
+
+/* Ici, on veut que seule la valeur du span présent dans la zone B soit affecté par ces attributs */
+.zoneB span {
+    color: gold;
+}
+
+/* Ici, on ne veut cibler que le paragraphe "Test" qui herite lui aussi de la classe zoneA */
+p.zoneA {
+    color: aquamarine;
+}

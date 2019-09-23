@@ -1,0 +1,31 @@
+header {
+    /* permet de mettre en forme l'element header car le css est appellé par la page html */
+    height: 70px; /* height est une proprieté css qui permet de definir la hauteur de l'element, ici en unité fixe : pixel */
+    background: lightcoral; /* proprieté css qui permet d'appliquer une couleur de fond à un element html */
+}
+
+nav {
+    background: lightcyan;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-image: url(https://media1.tenor.com/images/b401e58be0dad901c91cf13538177dd2/tenor.gif?itemid=12510321);
+}
+
+section {
+    background: lightseagreen;
+    height: 50px;
+    text-align: center
+}
+
+div {
+    background: lightgreen;
+    height: 50px;
+}
+
+span {
+    margin-left: 30px;
+}
+
+main, footer {
+    background: red;
+}

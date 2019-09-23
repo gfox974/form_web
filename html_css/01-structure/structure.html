@@ -1,0 +1,51 @@
+<!-- best practice : page d'accueil appellee index -->
+<!DOCTYPE html> <!-- balise obligatoire pour declarer un docment type html5 -->
+<html lang="fr"> <!-- balise ouvrante html obligatoire pour code html -->
+<head> <!-- initialisation de la page -->
+    <meta charset="UTF-8"> <!-- encodage de base -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- mise a echelle etc, lié au responsive web design -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> <!-- compatibilité avec edge -->
+    <!-- Balise titre -->
+    <link rel="stylesheet" href="style.css"> <!-- ( href = attribut, "" = valeur de l'attribut) permet de relier le fichier style à la page html, balise auto-fermante -->
+    <!-- il est possible d'integrer des attributs de style directement dans le doc html via la balise style -->
+    <title>Structure de base</title>
+</head>
+<body>
+<!-- corps du document -->
+    <!-- ici, une autre facon d'integrer du style à un element html -->
+    <header style="width: 500px;">
+    <!-- elements partie haute du site, titres, formulaire de recherche, logos, groupes de contenus introductifs / navigation, etc -->
+        header
+    </header>
+    <nav>
+    <!-- l'element nav represente une section d'une page destinée à la navigation en ayant des liens vers d'autres pages ou des fragments de cette page (via des ancres par exemple) -->
+        nav
+    </nav>
+    <main>
+    <!-- Contenu majoritaire du document, le contenu principal de la zone body, UN SEUL main par doc, plusieurs nav sont possible par contre -->
+        main
+        <section>
+        <!-- l'element section represente une section du document, par exemple un groupe de contenu thematique, une section commence generalement par un titre. Il est possible d'avoir plusieurs sections par document -->
+            section
+            <div>
+            <!-- conteneur generique (division), permet d'organiser le contenu, grouper des elements, appliquer un style, etc -->
+                div_1
+            </div>
+            <span>
+            <!-- conteneur generique en ligne (inline) pour le contenu phrasé, permet d'organiser, souvent utilisé pour regrouper des elements (icones, texte en couleur, etc) -->
+                span
+            </span>
+        </section>
+    </main>
+    <footer>
+    <!-- section du bas de page, utilisé pour les liens administratifs, plan du site, mentions légales, cgu, contact etc -->
+        footer
+    </footer>
+</body>
+</html> <!-- balise fermante du code -->
+
+<!-- 
+
+    par defaut, les balises de type block (header, div, nav, etc) prennent toute la largeur de page et se positionnent les uns au dessus des autres, pas les inline (span, img, input, br par exemple) qui elles occupent seulement la place dont elles ont besoin et se placent les unes à coté des autres
+
+-->

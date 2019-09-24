@@ -1,0 +1,30 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#conteneur {
+    margin: 100px;
+    display: flex;
+    text-align: center;
+}
+
+img {
+    height: 5%;
+    width: 5%;
+    margin: 0 auto;
+    float: initial;
+    transition: 0.5s ease-in;
+    position: relative;
+}
+
+#conteneur img:hover {
+    transform: rotate(7deg);
+    /*-webkit-box-shadow: 47px 61px 27px -12px rgba(0,0,0,0.51);*/
+    /*-moz-box-shadow: 47px 61px 27px -12px rgba(0,0,0,0.51);*/
+    box-shadow: 47px 61px 27px -12px rgba(0,0,0,0.51);
+}
+
+#conteneur img:hover:last-child {
+    transform: rotate(360deg);
+}

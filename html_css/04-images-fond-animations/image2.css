@@ -1,0 +1,21 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#conteneur {
+    margin: 100px;
+}
+
+img {
+    height: 150px;
+    width: 100px;
+    border: 5px solid red;
+    margin: 15px;
+    float: left; /* donne un effet flottant à l'image */
+    transition: 1.0s; /* durée de la transition entre la position de depart et la position survolée finale. adoucissement de l'effet de bump */
+}
+/* hover permet de definir un style different en cas de survol avec la souris */
+div img:hover {
+    margin-top: 2px; /* effet de bump sur le survol de la souris (hover) */
+}

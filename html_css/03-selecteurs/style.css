@@ -33,6 +33,11 @@ p:nth-child(5),p:nth-child(6) {
     color:tomato;
 }
 
+/* Juste pour illustrer le fait qu'on peut attribuer plusieurs classes à un element */
+.test {
+    text-align: center;
+}
+
 /* ici, on appelle l'id zoneC ( qui est un identifiant unique que l'on ne peut attribuer qu'à un seul element html ) */
 #zoneC {
     color: greenyellow;

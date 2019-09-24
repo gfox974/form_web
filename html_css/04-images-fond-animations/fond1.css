@@ -1,0 +1,29 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+/* background body */
+body {
+    background: rgb(236, 144, 236) url(./images/image1.png) no-repeat;
+    background-size: cover;
+}
+
+.contenu {
+    background: rgb(236, 144, 236) url(./images/image2.gif) no-repeat;
+    background-size: cover;
+    height: 200px;
+    width: 200px;
+    margin: auto 200px auto 0;
+    opacity: 0.24;
+    border-radius: 4px; /* coins arrondis */
+}
+
+.contenu p {
+    /* permet de centrer le texte verticalement et horizontalement */
+    position: relative;
+    text-align: center;
+    top: 50%; /* 50% de hauteur par rapport à son element parent */
+    font-size: 15px;
+    color: white;
+    opacity: 1;
+}

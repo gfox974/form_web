@@ -1,0 +1,22 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#conteneur {
+    margin: 100px;
+}
+/* Todo : augmenter la taille des images au survol */
+img {
+    height: 5%;
+    width: 5%;
+    margin: 15px;
+    float: left;
+    transition: 1.0s ease-in; /* ease change la vitesse de transition, ici ease-in : lent sur debut */
+    position: relative;
+}
+
+div img:hover {
+    transform: scale(3,3); /* ici, on multiplie par trois la taille de l'element survolé : 3x 3y */
+    z-index: 1000; /* on passe la priorité de son index au dessus des autres images, comme ca elle est au premier plan */
+}

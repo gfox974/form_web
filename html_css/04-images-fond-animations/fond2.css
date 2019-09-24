@@ -1,0 +1,20 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+/* test de couleur de fond en dégradé */
+.contenu {
+    height: 500px;
+    width: auto;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(62,121,9,1) 100%, rgba(0,212,255,1) 100%);
+}
+
+.contenu p {
+    position: relative;
+    font-size: 20px;
+    top: 50%;
+    text-align: center;
+    height: 200px;
+    background: url(./images/image3.jpeg) no-repeat;
+}

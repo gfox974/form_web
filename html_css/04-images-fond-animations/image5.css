@@ -1,0 +1,28 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+div {
+    width: 750px; /* largeur */
+    height: 130px; /* hauteur */
+    line-height: 0px; /* alignement dans la hauteur du texte */
+    color: transparent; /* couleur du texte */
+    font-size: 50px; /* taille du texte */
+    text-transform: uppercase; /* transformation en majuscules */
+    transition: 0.5s; /* durée de la transition */
+}
+
+div:hover {
+    line-height: 210px; /* au survol de la souris, modifie l'alignement du texte dans la hauteur */
+    color: orange; /* au survol de la souris, modifie la couleur du texte */
+}
+
+div img {
+    float: left; /* permet d'avoir l texte à voté de l'image, effet flottant */
+    margin: 0 15px; /* marges */
+}
+
+p {
+    margin-left: 10px;
+}

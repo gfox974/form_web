@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    color: black;
+    margin-left: 2px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+}
+
+header {
+    height: 100px;
+    background-color: red;
+}
+
+.main {
+    display: flex;
+    min-height: 900px;
+}
+
+.main #sideleft {
+    background-color: lightskyblue;
+    flex: 1;
+    max-width: 150px;
+}
+
+.main #middle {
+    background-color: greenyellow;
+    flex: 4;
+}
+
+.main #sideright {
+    background-color: brown;
+    flex: 1;
+    max-width: 150px;
+}

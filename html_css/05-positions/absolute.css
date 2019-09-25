@@ -1,0 +1,22 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+div {
+    height: 400px;
+    width: 800px;
+    background: lightskyblue;
+    color: black;
+    position: relative; /* si on met une position relative à la div dans laquelle orange est contenu, il se positionnera dans l'interieur de celle-ci qui le contient, plutot que de considerer la page comme espace */
+}
+
+.orange {
+    margin: 10px;
+    width: 200px;
+    background: wheat;
+    color: lightseagreen;
+    position: absolute; /* grace a cet attribut, on peut deplacer l'element par rapport au bord de page */
+    bottom: 10px; /* ici, on decale donc l'element "p" de 10 pixels en partant du bas de page */
+    left: 10%; /* et ici, on le positionne à 10% de la taille de fenetre en partant de la gauche */
+}

@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    color: black;
+    margin-left: 2px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+}
+
+/* Ici, contenu fixe : ne s'adaptera pas à la taille de fenetre */
+/*
+.head {
+    background-color: red;
+    height: 150px;
+    width: 100%;
+    border: 1px solid black;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 0;   
+}
+
+.mainbod {
+    background-color: greenyellow;
+    height: 100%;
+    margin: 0 auto;
+    position: absolute;
+    top: 150px;
+    left: 200px;
+    width: 100%;
+}
+
+.side {
+    margin: 0 auto;
+    background-color: lightskyblue;
+    position: absolute;
+    left: 0;
+    top: 150px;
+    height: 100%;
+    width: 200px;
+} 
+*/
+
+/* Ici, version qui s'adapte a l'echelle de la fenetre */
+header { /* header defini comme un element fixe */
+    height: 100px;
+    background-color: red;
+}
+
+main { /* Ici, je me sers du main comme etant le conteneur des div a resize et positionner */
+    display: flex;
+    /* min-height: 90vh; vh - metrique en responsive par rapport a la hauteur de fenetre, a peu pres en % ( vu que l'utilisation des % s'echelonne par rapport au contenu de l'element ..) */
+    min-height: 900px;
+}
+
+.side {
+    background-color: lightskyblue;
+    flex: 1;
+    max-width: 150px;
+}
+
+.mainbod {
+    background-color: greenyellow;
+    flex: 4;
+}

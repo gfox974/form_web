@@ -1,0 +1,23 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+#zone {
+    width: 600px;
+    height: 200px;;
+    padding: 10px;
+    background: white;
+    color: black;
+    border: solid 10px;
+}
+
+.orange {
+    margin: 10px;
+    width: 200px;
+    background: wheat;
+    color: orange;
+    position: relative; /* grace a cet attribut, on peut deplacer l'element par rapport à sa position d'origine, non pas par rapport à celle dans son element parent */
+    left: 30px; /* ici, on decale donc l'element "p" de 30 pixels à sa gauche */
+    top: 10px; /* et de 10 pixels par rapport à son haut */
+}

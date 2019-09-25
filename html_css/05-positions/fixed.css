@@ -1,0 +1,20 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+nav {
+    background: lightgrey;
+    position: fixed; /* le menu reste en position fixe lors du scrolling */
+    text-align: center;
+    width: 100%;
+    padding: 5px 0 5px 0;
+    top:0; /* Ici, on aligne a 0 pixels en haut */
+    left: 0; /* Ici, on aligne a 0 pixels à gauche */
+    color: black;
+}
+
+#contenu {
+    width: 80%;
+    margin: 30px auto 0 auto; /* une marge en haut de la div est necessaire pour que le debut du contenu ne soit pas caché par le menu (haut, droite, bas, gauche) */
+}

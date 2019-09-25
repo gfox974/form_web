@@ -1,0 +1,24 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.tailleFixe {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 1000px;
+    background: coral;
+}
+
+.tailleVariable {
+    font-size: 250%;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+    background: lightgoldenrodyellow;
+} /* Comme on peut le voir sur la page, l'element s'etirera toujours de sorte d'occuper toute la longueur de la page */

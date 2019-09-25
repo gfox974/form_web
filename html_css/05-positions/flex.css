@@ -1,0 +1,434 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+}
+
+div {
+    background-color: bisque;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    margin: 1%;
+    color: black;
+    font-size: 25px;
+}
+
+h2 {
+    text-align: center;
+}
+
+section {
+    border: 2px solid red;
+    padding: 10px;
+}
+
+/* la proprieté flex est une proprieté raccourcie pour definir la capacité d'un element flexible à modifier ses dimensions afin de remplir l'espece disponible de son conteneur */
+
+.container1 {
+    display: flex; /* on definit le conteneur comme etant flexible, dans la configuration en place, les elements seront cote à cote */
+    width: 960px;  /* sa largeur */
+    margin: 0 auto; /* on centre le bloc par rapport à la page (0 bas haut, auto gauche droite) */
+}
+
+.item1 {
+    flex: auto; /* là, on definit les elements de container1 appellant la classe item1 comme etant de type flex, en auto ils auront donc une largueur proportionnelle à leur nombre et à l'espace du conteneur */
+}
+
+.item1_1 {
+    
+}
+
+.item1_2 {
+    
+}
+
+.item1_3 {
+    
+}
+
+/* flex grow 1 */
+.container2 {
+    display: flex;
+    width: 960px;
+    margin: 0 auto;
+}
+
+.item2 {
+    flex: auto;
+    flex-grow: 1; /* les items qui n'ont pas de proportions implicites en surcharge auront des proportions rationnelles à ce qui reste de disponible dans le conteneur en termes d'espace */
+}
+
+.item2_1 {
+    width: 500px; /* ici on affecte une largeur de 500 pixels à un element particulier */
+}
+
+.item2_2 {
+    
+}
+
+.item2_3 {
+    
+}
+
+/* flex grow 2 */
+.container3 {
+    display: flex;
+    width: 960px;
+    margin: 0 auto;
+}
+
+.item3 {
+    flex-grow: 1; /* ici, on definit que par defaut chaque element de classe item3 ne prendra qu'une place proportionnelle aux autres dans l'espace de son conteneur ( sans le padding, l'equivalent de la largeur divisee par le nombre d'elements ) */
+}
+
+.item3_1 {
+    
+}
+
+.item3_2 {
+    flex-grow: 2; /* Ici, on met comme proprieté une grow 2 pour que l'item3_2 occupe l'equivalent en proportions de deux emplacements dans son conteneur */
+}
+
+.item3_3 {
+    
+}
+
+.item3_4 {
+    
+}
+/* en presence de l'utilisation de flex grow, on peut se passer de l'utilisation de flex auto */
+
+/* autre exemple de grow 1 */
+.container4 {
+    display: flex;
+    width: 960px;
+    margin: 0 auto;
+}
+
+.item4 {
+    flex-grow: 1;
+}
+
+.item4_1 {
+    
+}
+
+.item4_2 {
+
+}
+
+.item4_3 {
+    
+}
+
+.item4_4 {
+    
+}
+
+.item4_5 {
+    
+}
+
+.item4_6 {
+    
+}
+
+.item4_7 {
+    
+}
+
+.item4_8 {
+    
+}
+
+.item4_9 {
+    
+}
+
+.item4_10 {
+    
+}
+
+.item4_11 {
+    
+}
+
+.item4_12 {
+    
+}
+
+.item4_13 {
+    
+}
+
+.item4_14 {
+    
+}
+
+.item4_15 {
+    
+}
+
+/* exemple flex + order */
+/* On va definir un ordre de positionnement arbitraire des items 2 et 4 dans le conteneur pour qu'ils soient au debut */
+.container5 {
+    display: flex;
+    width: 960px;
+    margin: 0 auto;
+}
+
+.item5 {
+    flex-grow: 1;
+    order: 3; /* ici, a defaut de surcharge, les elements auto sont placés en troisieme position de l'index */
+}
+
+.item5_1 {
+    
+}
+
+.item5_2 {
+    order: 1; /* ici, on attribue implicitement la position 1 pour cet element dans le conteneur */
+}
+
+.item5_3 {
+    
+}
+
+.item5_4 {
+    order:2; /* ici, on attribue implicitement la position 2 pour cet element dans le conteneur */
+}
+
+/* exemple flex + raw-reverse */
+/* On va definir inverser l'affichage des elements dans le conteneur */
+.container6 {
+    display: flex;
+    width: 960px;
+    margin: 0 auto;
+    flex-direction: row-reverse; /* cet attribut doit etre affecté au conteneur en lui-meme */
+}
+
+.item6 {
+    flex-grow: 1;
+}
+
+.item6_1 {
+    
+}
+
+.item6_2 {
+    
+}
+
+.item6_3 {
+    
+}
+
+.item6_4 {
+    
+}
+
+/* exemple flex + colonnes + justify */
+/*  */
+.container7 {
+    display: flex;
+    width: 960px;
+    margin: 0 auto;
+    flex-direction: column; /* ordonne les items en colonnes plutot qu'en ligne */
+    height: 500px; /* ici on definit une hauteur de 500 pixels à la colonne */
+    flex-wrap: wrap; /* ici on lui indique de passer à la ligne apres chaque item dans le sens de lecture */
+    justify-content: center; /* permet de centrer verticalement les items */
+    align-items: center; /* permet de centrer horizontalement les items */
+}
+
+.item7 {
+    width: 150px; /* ici on definit une largeur fixe */
+}
+
+.item7_1 {
+    
+}
+
+.item7_2 {
+    
+}
+
+.item7_3 {
+    
+}
+
+.item7_4 {
+    
+}
+
+.item7_5 {
+    
+}
+
+.item7_6 {
+    
+}
+
+.item7_7 {
+    
+}
+
+.item7_8 {
+    
+}
+
+.item7_9 {
+    
+}
+
+.item7_10 {
+    
+}
+
+.item7_11 {
+    
+}
+
+.item7_12 {
+    
+}
+
+/* exemple flex + colonnes + justify + wrap  */
+/*  */
+.container8 {
+    display: flex;
+    width: 960px;
+    height: 500px;
+    margin: 0 auto;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.item8 {
+    width: 250px;
+    height: 50px;
+    line-height: 50px;
+    flex: 1; /* chaque element prends une place verticale, contrairement a grow qui n'est qu'horizontal */
+}
+
+.item8_1 {
+    flex: 2; /* lui doit prendre deux espaces verticaux */
+}
+
+.item8_2 {
+    
+}
+
+.item8_3 {
+    
+}
+
+.item8_4 {
+    
+}
+
+/* exemple flex + colonnes + justify + flex start  */
+/*  */
+.container9 {
+    display: flex;
+    width: 960px;
+    margin: 0 auto;
+    justify-content: flex-start; /* les elements se placent au tout debut du conteneur */
+}
+
+.item9 {
+    width: 150px;
+}
+
+.item9_1 {
+
+}
+
+.item9_2 {
+    
+}
+
+.item9_3 {
+    
+}
+
+/* exemple flex + colonnes + justify + flex end  */
+/*  */
+.container10 {
+    display: flex;
+    width: 960px;
+    margin: 0 auto;
+    justify-content: flex-end; /* les elements se placent en partant de la fin du conteneur */
+}
+
+.item10 {
+    width: 150px;
+}
+
+.item10_1 {
+
+}
+
+.item10_2 {
+    
+}
+
+.item10_3 {
+    
+}
+
+/* exemple flex + justify space between  */
+/*  */
+.container11 {
+    display: flex;
+    width: 960px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.item11 {
+    width: 150px;
+}
+
+.item11_1 {
+
+}
+
+.item11_2 {
+    
+}
+
+.item11_3 {
+    
+}
+
+/* exemple flex + justify space around  */
+/*  */
+.container12 {
+    display: flex;
+    width: 960px;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
+.item12 {
+    width: 150px;
+}
+
+.item12_1 {
+
+}
+
+.item12_2 {
+    
+}
+
+.item12_3 {
+    
+}

@@ -1,0 +1,35 @@
+* { 
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    color: black;
+    font-size: 15px;
+}
+
+#conteneur {
+    width: 900px;
+    margin: 0 auto;
+}
+
+main {
+    display: flex;
+}
+
+header {
+    height: 100px;
+    background: red;
+}
+
+#gauche {
+    width: 20%;
+    height: 600px;
+    background: blue;
+}
+
+#milieu {
+    width: 80%;
+    height: 600px;
+    background: green;
+}

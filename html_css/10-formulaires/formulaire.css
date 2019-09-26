@@ -1,0 +1,14 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: lightslategrey;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* labels stylisés */
+label {
+    float: left;
+    width: 200px;
+}

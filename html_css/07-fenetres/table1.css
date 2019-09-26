@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* tableau statistiques */
+table {
+    width: 700px;
+    height: 100px;
+    margin: 0 auto; /* centré */
+    border-collapse: collapse; /* permet de fusionner les bordures des cellules entre elles */
+}
+
+th {
+    background: lightblue;
+}
+
+td, th {
+    padding: 7px;
+    border: 1px solid; /* de base, le tableau n'a pas de bordures, il faut en affecter */
+    text-align: center;
+}
+/* */

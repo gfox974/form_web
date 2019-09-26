@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="formulaire.css">
+    <title>Formulaire HTML</title>
+</head>
+<body>
+    <h1>Formulaire HTML</h1><hr>
+<!-- la balise form declare un formulaire -->
+    <form method="" action=""> <!-- attributs utilisés en php et autres -->
+        <br>
+        <label for="pseudo">Pseudo</label>
+        <input type=text" id="pseudo" name="pseudo" required> <!-- type de champ saisie, required rends le remplissage obligatoire -->
+            
+        <!-- required : champ obligatoire
+         label : etiquette qui relie le champ input
+         name : attribut requis pour le php -->
+        <br>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password">
+
+        <br>
+        <label for="prenom">Prénom</label>
+        <input type="text" id="prenom" name="prenom" placeholder="Saisir votre prénom"> <!-- placeholder donne du texte en grisé dans le champ de saisie -->
+
+        <br>
+        <label for="email">e-mail</label>
+        <input type="email" id="email" name="email" placeholder="Saisir votre e-mail">
+
+        <br>
+        <label for="avatar">Avatar</label>
+        <input type="file" id="avatar" name="avatar" placeholder="Uploader un avatar"> <!-- le type file permet de télécharger un fichier en amont -->
+
+        <br>
+        <label for="pays">Pays</label> <!-- Menu deroulant avec differents choix -->
+        <select name="pays" id="pays"> <!-- on peut ajouter l'attribut: multiple si on veut permettre de faire plusieurs selections dans la liste -->
+            <option value="fr" selected>France</option> <!-- selected est l'option par defaut, value sert à php -->
+            <option value="it">Italie</option>
+            <option value="es">Espagne</option>
+        </select>
+        
+        <!-- Options en cases a cocher -->
+        <br>
+        <label for="choix">Quels sont vos fruits preferés ?</label>
+        <p>
+            <input type="checkbox" name="choix" value="orange">Orange
+            <input type="checkbox" name="fraise" value="fraise" checked>Fraise <!-- option cochée par defaut -->
+            <input type="checkbox" name="pomme" value="pomme">Pomme
+        </p>
+
+        <!-- boutons type radios (rond)-->
+        <br>
+        <label for="civilite">Civilité</label>
+        <p>
+            <input type="radio" id="civilite" name="civilite" value="m" checked>Homme
+            <input type="radio" id="civilite" name="civilite" value="f">Femme
+        </p>
+
+        <!-- Input attaché à une liste-->
+        <br>
+        <label for="ville">Ville</label>
+        <input type="text" id="ville" name="ville" list="france">
+        <datalist id="france">
+            <option value="paris">Paris</option>
+            <option value="marseille">Marseille</option>
+            <option value="lyon">Lyon</option>
+        </datalist>
+
+        <br>
+        <label for="cp">Code postal</label>
+        <input type="text" id="cp" name="cp" maxlength="5" pattern="[0-9]{5}" title="5 chiffres entre 0 et 9"> <!-- patttern permet d'utiliser des regex -->
+
+        <br>
+        <input type="submit" value="enregistrer"> <!-- bouton pour valider la saisie des infos du formulaire, value decrit ce dernier -->
+    </form>
+</body>
+</html>

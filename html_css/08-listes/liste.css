@@ -1,0 +1,16 @@
+
+/* on va changer le style de la puce de cette liste */
+ul.fruits {
+    list-style-type: none; /* là on enleve les puces préfaites */
+}
+
+ul.fruits li {
+    float: left;
+    margin: 15px;
+    background: url("./images/puce.gif") left center no-repeat;
+    padding: 0 0 0 17px;
+}
+
+hr {
+    clear: both;
+}

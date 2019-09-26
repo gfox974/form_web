@@ -1,0 +1,19 @@
+body {
+    background: red;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* decoration du lien */
+
+a {
+    text-decoration: none; /* enleve le sous-lignement par defaut */
+    color: black;
+}
+
+a:hover {
+    color: lightgoldenrodyellow;
+}

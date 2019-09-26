@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    color: black;
+    margin-left: 2px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+}
+
+.main {
+    min-height: 600px;
+    width: 100%;
+}
+
+.head {
+    background: purple;
+    height: 60px;
+}
+
+.menu {
+    background: yellow;
+    height: 50px;
+}
+
+.midup {
+    background: purple;
+    height: 400px;
+    display: flex;
+}
+
+.midcont {
+    display: flex;
+    height: 200px;
+}
+
+.middle {
+    flex: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.boxes {
+    width: 50%;
+    height: 50%;
+    border: 1px solid black;
+}
+
+.box_1 {
+    flex-grow: 1;
+    background: red;
+}
+
+.box_2 {
+    flex-grow: 1;
+    background: blue;
+}
+
+.bottom {
+    height: 100px;
+    background-color: crimson;
+    margin-top: 0;
+}

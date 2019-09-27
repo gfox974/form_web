@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Carte HTML</title>
+
+    <style>
+        h1 {
+            text-align: center;
+            color: black;
+        }
+        body {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            background: mediumaquamarine;
+        }
+
+        #carte {
+            display: block; /* par defaut iframe est un element de type inline, on transforme donc son type */
+            margin: 0 auto;
+            margin-bottom: 10px;
+        }
+
+        #form {
+            display: block;
+            margin: 0 auto;
+            width: 500px;
+            height: 1000px;
+        }
+    </style>
+
+</head>
+
+<body>
+    
+    <h1>Carte HTML</h1>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5707.393148741502!2d1.2088039025991064!3d44.33673976951143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12ab809ee9a2eed9%3A0x6e4ae37d88597239!2sDonjon-Tour%20de%20Montcuq!5e0!3m2!1sfr!2sfr!4v1569571828704!5m2!1sfr!2sfr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" id="carte"></iframe>
+<!-- iframe peut aussi permettre d'integrer un document dans un autre document -->
+    <iframe src="../10-formulaires/formulaire.html" frameborder="0" id="form"></iframe>
+</body>
+</html>

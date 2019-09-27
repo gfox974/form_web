@@ -12,3 +12,7 @@ label {
     float: left;
     width: 200px;
 }
+
+textarea {
+    resize: none; /* Ici, on fixe la taille de la zone de texte */
+}

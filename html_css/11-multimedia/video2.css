@@ -1,0 +1,25 @@
+
+
+video { /* le but ici est de se servir de la video en boucle comme fond */
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1000; /* z-index sert a definir la position en termes de plans de l'element, plus elle est elevé, plus elle est au premier plan */
+    background: url("./multi/videoBackground.jpg");
+    background-size: cover;
+}
+
+.contenu {
+    font-family: 'Courier New', Courier, monospace;
+    color: gray;
+    text-align: center;
+    opacity: 0.65;
+    width: 50%;
+    margin: 30px auto 0 auto;
+    padding: 20px;
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.150);
+}

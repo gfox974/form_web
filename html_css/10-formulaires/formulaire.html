@@ -73,7 +73,49 @@
         <label for="cp">Code postal</label>
         <input type="text" id="cp" name="cp" maxlength="5" pattern="[0-9]{5}" title="5 chiffres entre 0 et 9"> <!-- patttern permet d'utiliser des regex -->
 
+        <!-- Input champ de texte -->
         <br>
+        <label for="adresse">Adresse</label>
+        <textarea name="adresse" id="" cols="30" rows="10" maxlength="100"></textarea> <!-- ici, nombre de caracteres limités à 100 -->
+
+        <!-- In date de naissance -->
+        <br>
+        <label for="datedenaissance">Date de naissance</label>
+        <input type="date" id="date" name="date">
+
+        <!-- In choix de couleur -->
+        <br>
+        <label for="color">Couleur</label>
+        <input type="color" id="color" name="color">
+
+        <!-- in barre de recherche -->
+        <br>
+        <label for="recherche">Recherche</label>
+        <input type="text" pattern="[a-zA-Z0-9.-_]+" title="caracteres autorisés : a-z A-Z 0-9 "> <!-- regex pour les caracteres autorisés, le + permet d'utiliser plusieurs fois ceux autorisés-->
+
+        <!-- Upload de fichiers multiples-->
+        <br>
+        <label for="avatars">Avatars</label>
+        <input type="file" id="avatars" multiple>
+
+        <!-- Champ avec une valeur non-modifiable (saisie bloquée) -->
+        <br>
+        <label for="reference">Reference</label>
+        <input type="text" id="reference" name="reference" value="145h01" disabled>
+
+        <!-- Champ caché (utile pour php afin de recup des données a manip) -->
+        <br>
+        <label for="cache">Champ caché</label>
+        <input type="hidden" id="cache" name="cache">
+
+        <!-- Reset -->
+        <br>
+        <label for="reset">Reboot du formulaire</label>
+        <input type="reset" id="effacer" value="recommencer">
+
+        <!-- Valider formulaire -->
+        <br>
+        <label for="enregister">Envoi du formulaire</label>
         <input type="submit" value="enregistrer"> <!-- bouton pour valider la saisie des infos du formulaire, value decrit ce dernier -->
     </form>
 </body>

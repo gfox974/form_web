@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Integration video</title>
+
+    <style>
+    body {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        background: lightcyan;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    #video {
+        display: block;
+        margin: 0 auto;
+    }
+    </style>
+
+</head>
+<body>
+    
+    <h1>Integration video</h1>
+    <h2>cic.ogv</h2>
+    <video controls poster="./multi/cic.gif"  id="video"> <!-- controls donne acces aux commandes du lecteur, poster permet d'utiliser une image de fond lors du premier chargement de la page -->
+        <source src="multi/cic.ogv"> <!-- certains navigateurs ne prennent pas en charge certains formats, il faut donc prevoir plusieurs sources de differents formats -->
+    </video>
+
+    <hr>
+
+    <h2>cic.webm</h2>
+    <video preload controls poster="./multi/cic.gif"  id="video2"> <!-- preload permet de mettre en cache le fichier video -->
+        <source src="multi/cic.webm">
+    </video>
+
+    <hr>
+
+    <h2>cic.mp4</h2>
+    <video preload autoplay muted loop controls poster="./multi/cic.gif"  id="video3"> <!-- autoplay est geré differement selon les navigateurs, pour chrome et firefox il faut mettre la video en mute-->
+        <source src="multi/cic.mp4">
+    </video>
+
+    <hr>
+
+    <h2>cic</h2>
+    <video preload autoplay muted loop controls poster="./multi/cic.gif"  id="video4"> <!-- Il vaut mieux mettre un maximum de sources de differents format afin de palier aux incompatibilités de format avec les navigateurs -->
+        <source src="multi/cic.mp4">
+        <source src="multi/cic.ogv">
+        <source src="multi/cic.webm">
+    </video>
+    <!-- le navigateur lira la premiere source avec laquelle ca passera -->
+
+</body>
+</html>

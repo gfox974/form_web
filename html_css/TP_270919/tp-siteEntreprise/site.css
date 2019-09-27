@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: white;
+}
+
+body {
+    background-image: url("./img/body-bg.png");
+    background-size: cover;
+}
+
+/* Partie header */
+.tophead {
+    display: flex;
+    width: 1000px;
+    margin: auto;
+}
+
+.logo {
+    background-image: url("./img/logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 170px;
+}
+
+.head {
+    display: flex;
+    width: 1000px;
+    margin: auto;
+}
+
+.head nav {    
+    flex:1;
+    flex-grow:1;
+}
+
+.head nav ul li { /* sans virgule, l'ascendance des elements est suivie, ici : li dans l'ul de nav */
+    float: left;
+    list-style: none;
+}
+
+.head nav ul ul {
+    display: none; /* permet de cacher les sous-menus de l'ul de l'ul de nav */
+    width: 150px;
+}
+
+.head nav li a {
+    text-decoration: none; /* enleve le surlignement des liens a */
+    color: black;
+    padding: 4px 0 4px; /* 4 en haut, 0 a droite, 4 en bas */
+    display: block; /* transformation des elements liens en blocs (les a sont par defaut de type inline ->) */
+    width: 200px;
+}
+
+.head nav ul {
+    text-align: center;
+    height: 10px;
+}
+
+.head nav ul.niveau1 li.sousmenu:hover ul.niveau2 { /* affiche un element (ul.niveau2) sur un hover des element li.sousmenu présents dans le nav -> classe ul.niveau1 */
+    display: block; /* Au survol de la souris sur les sous-menus, on transforme donc les listes en blocs, c'est ce qui les fait apparaitre les uns en dessous des autres */
+}
+
+.head nav li:hover { /* Ici, nav li est le bandeau principal du menu */
+    background: lightskyblue;
+    border-radius: 10px;
+    color: white;
+}
+/* end header */
+
+/* STRUCTURE */
+p {
+    color: black;
+    margin-left: 2px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+}
+
+.main {
+    min-height: 600px;
+}
+
+.midupcont {
+    display: flex;
+    height: 400px;
+}
+
+.midup {
+    background-image: url("./img/bandeau3.jpg");
+    background-repeat: no-repeat;
+    display: block;
+    text-align: center;
+    width: 1000px;
+    height: 400px;
+}
+
+.midcont {
+    display: flex;
+    height: 200px;
+    width: 1000px;
+    margin: auto;
+}
+
+.middle {
+    flex: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.midupcont .sideleft {
+    flex: 1;
+}
+
+.midupcont .sideright {
+    flex: 1;
+}
+
+.boxes {
+    height: 50%;
+    border: 1px solid grey;
+    border-radius: 10px;
+    text-align: center;
+    background-color: white;
+    margin: 5px;
+}
+
+.boxtitle {
+    background: lightskyblue;
+    color: grey;
+    border: 1px grey solid;
+    border-radius: 10px;
+}
+
+.box_1 {
+    flex-grow: 1;
+    background-image: url("./img/image_bloc_web_marketing.png");
+    background-repeat: no-repeat;
+}
+
+.box_2 {
+    flex-grow: 1;
+}
+
+.box_3 {
+    flex-grow: 1;
+}
+
+/* sub-mid */
+
+.slogan {
+    background: lightskyblue;
+    color: white;
+    margin-top: 0;
+}
+
+.whereami {
+    color: lightskyblue;
+}
+
+.bottom {
+    height: 100px;
+    background-color: white;
+    margin-top: 0;
+}

@@ -156,14 +156,19 @@ p {
     background: lightskyblue;
     color: white;
     margin-top: 0;
+    margin: auto;
+    width: 1000px;
 }
 
 .whereami {
     color: lightskyblue;
+    width: 1000px;
+    margin: auto;
 }
 
 .bottom {
     height: 100px;
     background-color: white;
     margin-top: 0;
+    margin: auto;
 }

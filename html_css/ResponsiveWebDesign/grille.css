@@ -1,0 +1,148 @@
+body {
+    margin:0;
+    padding:0;
+}
+
+#conteneur {
+    max-width: 1200px;
+    margin:0 auto; /* centré au milieu de la page */
+    border: 3px solid black;
+}
+
+.ligne {
+    clear: both; /* a chaque fois qu'on fait une ligne, passe à la suite */
+}
+
+/* On va definir 12 classes avec une largeur differente pour servir de colonnes */
+.col_1 {
+    width: 8.33%;
+    float: left;
+}
+
+.col_2 {
+    width: 16.66%;
+    float: left;
+}
+
+.col_3 {
+    width: 24.99%;
+    float: left;
+}
+
+.col_4 {
+    width: 33.32%;
+    float: left;
+}
+
+.col_5 {
+    width: 41.65%;
+    float: left;
+}
+
+.col_6 {
+    width: 49.98%;
+    float: left;
+}
+
+.col_7 {
+    width: 58.31%;
+    float: left;
+}
+
+.col_8 {
+    width: 66.54%;
+    float: left;
+}
+
+.col_9 {
+    width: 74.97%;
+    float: left;
+}
+
+.col_10 {
+    width: 83.36%;
+    float: left;
+}
+
+.col_11 {
+    width: 91.63%;
+    float: left;
+}
+
+.col_12 {
+    width: 100%;
+    float: left;
+}
+/* Ici, on va definir leurs differentes marges */
+.col_1-marge {
+    margin-left: 8.33%;
+}
+
+.col_2-marge {
+    margin-left: 16.66%;
+}
+
+.col_3-marge {
+    margin-left: 24.99%;
+}
+
+.col_4-marge {
+    margin-left: 33.32%;
+}
+
+.col_5-marge {
+    margin-left: 41.65%;
+}
+
+.col_6-marge {
+    margin-left: 49.98%;
+}
+
+.col_7-marge {
+    margin-left: 58.31%;
+}
+
+.col_8-marge {
+    margin-left: 66.54%;
+}
+
+.col_9-marge {
+    margin-left: 74.97%;
+}
+
+.col_10-marge {
+    margin-left: 83.36%;
+}
+
+.col_11-marge {
+    margin-left: 91.63%;
+}
+
+/* et des pattern de couleurs */
+.bleu {
+    background: blue;
+    min-height: 100px;
+}
+
+.rouge {
+    background: red;
+    min-height: 100px;
+}
+
+.orange {
+    background: orange;
+    min-height: 100px;
+}
+
+/* media-queries */
+/* media est une regle css que l'on appelle media queries, on peut s'en servir pour gerer des regles de conditions sur patterns */
+@media screen and (max-width:768px) { /* cans ce cas, matchera pour tout ce qui est doté d'un écran des lors que la largeur sera inférieure à 768px */
+    .col_1, .col_2, .col_3, .col_4, .col_5, .col_6, .col_7, .col_8, .col_9, .col_10, .col_11, .col_12 {
+        width: 100%; /* on etends les colonnes */
+    }
+    .col_1-marge, .col_2-marge, .col_3-marge, .col_4-marge, .col_5-marge, .col_6-marge, .col_7-marge, .col_8-marge, .col_9-marge, .col_10-marge, .col_11-marge {
+        margin-left: 0; /* on annule les marges à gauche */
+    }
+    /* tous les blocs prendront 100% de la largeur et se placeront les uns en dessous des autres */
+}
+

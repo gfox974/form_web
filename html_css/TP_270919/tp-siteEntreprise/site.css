@@ -35,17 +35,17 @@ body {
 
 .head nav {    
     flex:1;
-    flex-grow:1;
 }
 
 .head nav ul li { /* sans virgule, l'ascendance des elements est suivie, ici : li dans l'ul de nav */
     float: left;
     list-style: none;
+    font-size: 10px;
 }
 
 .head nav ul ul {
     display: none; /* permet de cacher les sous-menus de l'ul de l'ul de nav */
-    width: 150px;
+    align-items: flex-end;
 }
 
 .head nav li a {
@@ -53,7 +53,7 @@ body {
     color: black;
     padding: 4px 0 4px; /* 4 en haut, 0 a droite, 4 en bas */
     display: block; /* transformation des elements liens en blocs (les a sont par defaut de type inline ->) */
-    width: 200px;
+    width: 100px;
 }
 
 .head nav ul {
@@ -169,6 +169,7 @@ p {
 .bottom {
     height: 100px;
     background-color: white;
+    width:1000px;
     margin-top: 0;
     margin: auto;
 }

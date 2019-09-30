@@ -1,0 +1,80 @@
+html, body {
+    background: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 16px;
+    margin: 10px;
+}
+
+/* - Récap unités -
+% : unité de mesure relative calculée par rapport à son parent
+em : unité de mesure relative calculée par rapport à son parent (1em = 100%)
+rem : unité de mesure relative calculée par rapport à son élément racine (1rem = 100%,  non-supportée par internet explorer)
+vw = unité relative à la largeur de l'ecran
+vh = unité relative à la hauteur de l'ecran
+*/
+
+
+h1 { /* test de % */
+    /*font-size: 200%; /* 
+    ici elle fait donc 2*16px, unité relative calculée a partir de son element parent. (ici, dans les parametres des balises body),
+    cette unité de mesure n'est pas à privilegier pour la taille de police, le % est plus souvent utilisé pour calculer les dimensions des elements d'une page web 
+    */
+    font-size: 2em;
+    /*
+    Ici, 2em equivaut aussi a 2*16px, en se basant sur le meme heritage que le %, cette unité est souvent utilisée pour les tailles de police / margin / padding.
+    si nous changeons la taille de la police du body, nous observons que tous les elements sont resize dynamiquement
+    */
+}
+
+h2 {
+    font-size: 1.75em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+h4 {
+    font-size: 1.25em;
+}
+
+li {
+    font-size: 2em; 
+    /* ici, la methode em pose probleme, les li etant imbriquées celles en bout de chaine se retrouvent avec une taille de 64px, car leur li parent etait deja resizé en 32 px */
+}
+
+p, h1, h2, h3, h4, h5 {
+    /* margin-bottom: 1em;
+    /* ici, em pose probleme sur le margin aussi, mais le calcul etant relatif à l'element parent, comme ils n'ont pas tous la meme taille de base, le margin n'est pas homogene */
+    margin-bottom: 1rem;
+    /* On va donc preferer utiliser l'unité rem, qui utilise le meme ratio de calcul sauf qu'il se base sur l'element racine (root em) plutot que sur l'element parent, 
+    1 rem prends donc ici la valeur de la size racine ( ici, body = 16px) */
+}
+
+.btn {
+    background: lightblue;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    /*padding: 10px 20px; en faisant ca, les boutons se retrouvent avec le meme padding alors qu'ils ont des tailles differentes */
+    padding: 0.625em 1.25em; /* on fait donc 10 / 16 et 20 / 16 pour convertir les px en em en se basant sur la valeur parente comme base (soit 16), afin que le padding de big s'adapte proportionnellement aussi */
+}
+
+.big {
+    font-size: 2em; /* Ici avec em, la font-size est bien calculée par rapport a l'element racine (btn), par contre le padding ne change pas s'il est fixé en px */
+}
+
+/* test viewport height / width */
+nav {
+    background:lightgreen;
+    padding: 5px;
+    width: 50vw; /* vw = unité relative à la largeur de l'ecran donc a peu pres 50% */
+    height: 50vh; /* vh = unité relative à la hauteur de l'ecran donc a peu pres 50%, souvent utilisé dans des cas particuliers, les hauteurs etant le plus souvent definies en fixe */
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    padding-right: 0.5em; /* */
+}

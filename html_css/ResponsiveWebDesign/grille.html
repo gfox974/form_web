@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simulation de grille (grid)</title>
+    <link rel="stylesheet" href="grille.css">
+</head>
+<body> <!-- On emule une grille un peu a la maniere de bootstrap -->
+    <div id="conteneur">
+        <div class="ligne">
+            <div class="col_5 bleu"></div> <!-- Imaginons que j'ai envie que cette div prenne l'equivalent de 5 colonnes-->
+            <div class="col_2 rouge"></div> <!-- et que celle ci prenne deux espaces sur douze-->
+            <div class="col_5 orange"></div> <!-- et elle 5 -->
+            <!-- en somme, ces trois utilisent la longueur de 12 colonnes -->
+        </div>
+        <div class="ligne">
+            <div class="col_1-marge cold_2 rouge"></div>
+            <div class="col_2 orange"></div>
+            <div class="col_2 bleu"></div>
+            <div class="col_2 rouge"></div>
+            <div class="col_2 orange"></div>
+            <div class="col_2 bleu"></div>
+        </div>
+        <div class="ligne">
+            <div class="col_6 col_2-marge rouge"></div>
+        </div>
+        <div class=ligne></div> <!-- necessaire pour fermer le float -->
+    </div>
+</body>
+</html>

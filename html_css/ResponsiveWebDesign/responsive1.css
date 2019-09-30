@@ -1,0 +1,137 @@
+/* CSS General*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+
+.conteneur {
+    width: 60%;
+    margin: 0 auto;
+}
+
+/* Partie header */
+
+header {
+    background: lightgreen;
+    padding: 0.625em;
+}
+
+.haut {
+    display: flex;
+}
+
+.haut img {
+    width: 150px;
+}
+
+.elem {
+    flex-grow: 1;
+}
+
+.elem1 {
+
+}
+
+.elem2 {
+    flex-grow: 2;
+}
+
+/* Partie nav */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+nav a {
+    text-decoration: none;
+    color: lightslategray;
+}
+
+nav a:hover {
+    color: greenyellow;
+}
+
+/* Partie contenu main */
+
+section {
+    display: flex;
+    padding: 20px 0 20px 0;
+}
+
+section div:first-child {
+    margin-right: 20px;
+}
+
+section div:last-child p {
+    text-align: justify;
+}
+
+/* Partie footer */
+footer {
+    background: lightgreen;
+}
+
+.bas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+}
+
+/* Partie media-queries */
+@media screen and (max-width:950px) {
+    .conteneur {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:900px) {
+    section {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0 10px 0;
+    }
+
+    section div:first-child {
+        margin-right: 0;
+    }
+
+    section div:first-child img {
+        width: 100%;
+    }
+
+    .conteneur {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:640px) {
+    .haut {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .elem1 img {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+
+    .elem2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .elem2 a {
+        padding-bottom: 1%;
+    }
+}

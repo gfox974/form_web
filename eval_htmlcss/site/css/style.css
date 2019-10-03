@@ -100,22 +100,24 @@ main {
 .midcont {
     background-color: lightgray;
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     margin: 0 auto;
-    width: 40vw;
+    /* width: 40vw; */
 }
 
 .middle {
-    display: flex;
+    /*display: flex;*/
     flex-wrap:wrap;
     align-items: center;
     margin: auto;
     padding: 10px;
+    flex: 1;
 }
 
 .boxes {
     width: 20vw;
     height: 20vh;
+    margin: 10px;
 }
 
 .box_ur {
@@ -155,7 +157,7 @@ main {
     background-image: url("../img/gant-boxe-1.png");
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: bottom right;
+    background-position: center;
 }
 
 .box_4 {

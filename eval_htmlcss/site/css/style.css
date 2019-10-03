@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    color: black;
+    margin-left: 2px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+}
+
+/* Header part */
+.headcont {
+    display:flex;
+    background: white;
+    padding: 0 10vw;
+}
+
+.icon_left {
+    position: relative;
+    top: 5px;
+    left: 5px;
+    width: 6%;
+}
+
+.top {
+    flex: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top_r {
+    flex: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid gray;
+    border-radius: 4px;
+}
+
+.t_box_1 {
+    flex: 2;
+    background-image: url("../img/logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 10vh;
+    background-position: center;
+}
+
+.t_box_2 {
+    flex-grow: 1;
+    padding: 2px;
+    height: 6vh;
+    width: 3vw;
+    background-color: lightgray;
+}
+/* end head */
+/* nav */
+.menu {
+    background-color: white;
+    height: 50px;
+    display: flex;
+    padding: 0 10vw;
+}
+
+.m_box_1 {
+    flex: 3;
+    background-color: white;
+    padding: 15px;
+    text-align: right;
+}
+
+.m_box_2 {
+    flex-grow: 1;
+    background-color: white;
+    padding: 15px;
+    text-align: center;
+}
+/* end nav */
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+main {
+    display: flex;
+    height: 500px;
+    flex: auto;
+    background-position: 
+}
+
+.midcont {
+    background-color: lightgray;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 40vw;
+}
+
+.middle {
+    display: flex;
+    flex-wrap:wrap;
+    align-items: center;
+    margin: auto;
+    padding: 10px;
+}
+
+.boxes {
+    width: 20vw;
+    height: 20vh;
+}
+
+.box_ur {
+    background: black;
+    color: orange;
+    border: 1px grey solid;
+    border-radius: 1px;
+    position: relative;
+    width: 2vw;
+    right: -11vw;
+    
+}
+
+.box_1 {
+    flex: 1;
+    background: turquoise;
+    background-image: url("../img/gant-boxe-2.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 20vw;
+    height: 20vh;
+}
+
+.box_2 {
+    flex: 1;
+    background: orange;
+    background-image: url("../img/gant-boxe-2.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.box_3 {
+    flex: 1;
+    background:violet;
+    background-image: url("../img/gant-boxe-1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom right;
+}
+
+.box_4 {
+    flex: 1;
+    background:blue;
+    background-image: url("../img/gant-boxe-1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.bottom_top {
+    height: 20px;
+    background-color: grey;
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding: 0 10vw;
+    position: relative;
+    bottom: 6vh;
+}
+
+.bottom_m_cont {
+    height: 6vh;
+    width: 28vw;
+    background-color: lightgray;
+    position: relative;
+    z-index: 1000;
+    left: 36vw;
+    bottom: 8vh;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.bottom_m_cont_box {
+    flex-grow: 1;
+    border: 1px solid black;
+}
+
+.bottom {
+    height: 30vh;
+    background-color: grey;
+    margin-top: 0;
+}
+
+.bottom_el_cont_1 {
+    height: 11vh;
+    width: 13vw;
+    background-color: lightgray;
+    padding: 0 10vw;
+    position: relative;
+    z-index: 1000;
+    left: 33vw;
+    bottom: 5vh;
+}
+
+.bottom_el_cont_2 {
+    height: 6vh;
+    width: 10vw;
+    background-color: rgba(211, 211, 211, 0);
+    position: relative;
+    z-index: 1000;
+    left: 44vw;
+    bottom: -7px;
+}
